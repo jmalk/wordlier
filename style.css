@@ -1,0 +1,14 @@
+:root {
+  --square-width: 4rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(6, var(--square-width));
+  grid-template-rows: var(--square-width);
+  grid-gap: 10px;
+}
+
+.square {
+  border: 1px solid black;
+}
