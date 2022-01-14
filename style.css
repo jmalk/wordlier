@@ -1,5 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
 :root {
   --square-width: 4rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  margin-bottom: 3rem;
 }
 
 .row {
