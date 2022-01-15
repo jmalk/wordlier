@@ -44,3 +44,24 @@
   font-size: 2rem;
   line-height: 4rem;
 }
+
+.square.correct {
+  background-color: seagreen;
+  border: 1px solid seagreen;
+}
+
+.square.present {
+  background-color: goldenrod;
+  border: 1px solid goldenrod;
+}
+
+.square.incorrect {
+  background-color: grey;
+  border: 1px solid grey;
+}
+
+.square.correct,
+.square.present,
+.square.incorrect {
+  color: white;
+}
