@@ -7,6 +7,16 @@
 :root {
   --square-width: 4rem;
   --gap-width: 1rem;
+  --green: #6aaa64;
+  --yellow: #c9b458;
+  --white: #ffffff;
+  --grey: #86888a;
+  --black: #212121;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .container {
@@ -38,7 +48,7 @@
 }
 
 .square {
-  border: 1px solid black;
+  border: 1px solid var(--black);
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
@@ -46,22 +56,22 @@
 }
 
 .square.correct {
-  background-color: seagreen;
-  border: 1px solid seagreen;
+  background-color: var(--green);
+  border: 1px solid var(--green);
 }
 
 .square.present {
-  background-color: goldenrod;
-  border: 1px solid goldenrod;
+  background-color: var(--yellow);
+  border: 1px solid var(--yellow);
 }
 
 .square.incorrect {
-  background-color: grey;
-  border: 1px solid grey;
+  background-color: var(--grey);
+  border: 1px solid var(--grey);
 }
 
 .square.correct,
 .square.present,
 .square.incorrect {
-  color: white;
+  color: var(--white);
 }
