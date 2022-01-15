@@ -1,5 +1,5 @@
 const wordLength = 6;
-const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
 let state = [];
 
@@ -22,5 +22,5 @@ const updateUI = (state) => {
   $squares.forEach((square, i) => {
     // Set all empty squares to empty string to handle Backspace.
     square.textContent = state[i] || '';
-  })
-}
+  });
+};
