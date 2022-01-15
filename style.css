@@ -6,6 +6,7 @@
 
 :root {
   --square-width: 4rem;
+  --gap-width: 1rem;
 }
 
 .container {
@@ -23,11 +24,16 @@
   margin-bottom: 3rem;
 }
 
+.grid {
+  width: calc(6 * var(--square-width) + 5 * var(--gap-width));
+  margin: 0 auto;
+}
+
 .row {
   display: grid;
   grid-template-columns: repeat(6, var(--square-width));
   grid-template-rows: var(--square-width);
-  grid-gap: 10px;
+  grid-gap: var(--gap-width);
 }
 
 .square {
